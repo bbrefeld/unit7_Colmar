@@ -1,6 +1,21 @@
 html {
   font-size: 16px;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+.fullsection {
+  width: 100%;
+}
+.halfsection {
+  width: 60%;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+}
+aside {
+  width: 40%;
+}
 
 main {
   display: flex;
@@ -8,15 +23,143 @@ main {
   justify-content: center;
   width: 100%;
 }
+header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+header a {
+  height: 100%;
+}
+header a img {
+  height: 100%;
+}
+header p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header p span {
+  color: gray;
+}
+header ul {
+  margin-left: auto;
+  margin-right: 0;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1.35rem;
+}
 
-section {
+main #banner-section, main #course-section {
+  background-color: Gainsboro;
+}
+main #banner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2.5rem 2rem;
+}
+main #banner-section img {
   width: 60%;
+  height: auto;
+  box-sizing: border-box;
 }
-
-aside {
+main #banner-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 40%;
+  height: 70%;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+main #banner-section div h1 {
+  font-size: 3rem;
+  font-weight: Bold;
+  width: 80%;
+  color: #222;
+}
+main #banner-section div p {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 80%;
+  color: #444;
 }
 
-img {
-  width: 50%;
+main #banner-section div span {
+  display: block;
+  padding: 8px;
+  width: 80%;
+  box-sizing: border-box;
+  background-color: #222;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main #promotion-section img {
+  width: 100%;
+}
+main #promotion-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem 0 1.5rem 0;
+}
+main #promotion-section .author {
+  padding: 1.5rem 0 2rem 0;
+}
+main #promotion-aside {
+  border-left: 1px solid gainsboro;
+  box-sizing: border-box;
+}
+main #promotion-aside article {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 1rem 1rem;
+}
+main #promotion-aside #article-1 {
+  border-bottom: 1px solid gainsboro;
+}
+main #promotion-aside #article-2 {
+  padding: 1rem 0 1rem 1rem;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  margin-top: 1px;
+}
+main #promotion-aside #article-3 {
+  padding: 1rem 0 1rem 1rem;
+  background-color: Gainsboro;
+  margin-top: 1px;
+}
+main #promotion-aside article a {
+  width: 35%;
+}
+main #promotion-aside article a img {
+  width: 100%;
+}
+main #promotion-aside article div {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 65%;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+}
+main #promotion-aside article div h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  flex-basis: 100%;
+}
+main #promotion-aside article div p {
+  padding-top: 0.75rem;
+  flex-basis: 100%;
+}
+main #promotion-aside article div a {
+  padding-top: 0.75rem;
+  color: CornflowerBlue;
 }

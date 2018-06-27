@@ -435,6 +435,9 @@ html footer ul li a {
   html header {
     padding: 0;
   }
+  html header p {
+    display: none;
+  }
   html header a {
     -webkit-transition: background-color 120ms ease-out;
     -o-transition: background-color 120ms ease-out;

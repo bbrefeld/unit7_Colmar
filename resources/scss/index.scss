@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,700');
+
+html {
+  font-size: 16px;
+  font-family: serif, sans-serif;
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: serif, sans-serif;
+  }
+  .fullsection {
+    width: 100%;
+  }
+  .halfsection {
+    width: 60%;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+  }
+  aside {
+    width: 40%;
+  }
+  h1, h2, h3 {
+    font-family: 'Archivo', sans-serif;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4rem;
+    padding: 0 0.5rem 0 1.5rem;
+    a {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      span {
+        color: gray;
+      }
+    }
+    .mobile-version {
+      display: none;
+    }
+    .desktop-version {
+      margin-right: 0;
+      margin-left: auto;
+      height: 100%;
+      ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        li {
+          height: 100%;
+          font-size: 1.35rem;
+          transition: background-color 120ms ease-out font-weight 120ms ease-out;
+          a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 1rem;
+          }
+          a:hover {
+            background-color: gainsboro;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    #banner-section {
+      background-color: Gainsboro;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.5rem 2rem;
+      img {
+        width: 60%;
+        height: auto;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+        height: 70%;
+        padding-left: 2rem;
+        h1 {
+          font-size: 3rem;
+          font-weight: Bold;
+          width: 90%;
+          color: #222;
+          padding-bottom: 1rem
+        }
+        p {
+          font-size: 2rem;
+          font-weight: bold;
+          width: 90%;
+          color: #444;
+          padding-bottom: 1rem;
+        }
+        span {
+          display: block;
+          font-weight: bold;
+          padding: 8px;
+          width: 80%;
+          box-sizing: border-box;
+          background-color: #222;
+          color: white;
+          font-size: 1.5rem;
+          text-align: center;
+          transition: color 200ms ease-out, background-color 200ms ease-out, border 120ms ease-out;
+        }
+        span:hover {
+          color: #222;
+          background-color: white;
+        }
+      }
+    }
+    #promotion-section {
+      line-height: 1.3;
+      img {
+        width: 100%;
+      }
+      h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 2rem 0 1.5rem 0;
+      }
+      .author {
+        padding: 1.5rem 0 2rem 0;
+      }
+    }
+    #promotion-aside {
+      border-left: 1px solid gainsboro;
+      box-sizing: border-box;
+      padding-bottom: 2rem;
+      line-height: 1.3;
+      .mobile-version {
+        display: none;
+      }
+      article {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0 1rem 1rem;
+        a {
+          width: 35%;
+          img {
+            width: 100%;
+          }
+        }
+        div {
+          display: flex;
+          align-content: center;
+          flex-wrap: wrap;
+          width: 65%;
+          box-sizing: border-box;
+          padding-left: 1.5rem;
+          h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex-basis: 100%;
+          }
+          p {
+            padding-top: 0.75rem;
+            flex-basis: 100%;
+          }
+          a {
+            padding-top: 0.75rem;
+            color: CornflowerBlue;
+          }
+        }
+      }
+      #article-1 {
+        border-bottom: 1px solid gainsboro;
+        transition: background-color 200ms ease-out, color 200ms ease-out;
+      }
+      #article-2 {
+        padding: 1rem 0 1rem 1rem;
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+        margin-top: 1px;
+        transition: background-color 200ms ease-out, color 200ms ease-out;
+      }
+      #article-3 {
+        padding: 1rem 0 1rem 1rem;
+        background-color: Gainsboro;
+        margin-top: 1px;
+        transition: background-color 200ms ease-out, color 200ms ease-out;
+      }
+      #article-1:hover, #article-2:hover, #article-3:hover {
+        background-color: #333;
+        color: white;
+      }
+    }
+    #course-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #EEE;
+      line-height: 1.3;
+      h2 {
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 2rem;
+      }
+      #course-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 4rem 2rem 4rem;
+        .row {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 1rem;
+          a {
+            width: 28%;
+            article {
+              width: 100%;
+              height: 100%;
+              background-color: white;
+              transition: background-color 200ms ease-out, color 200ms ease-out;
+              img {
+                width: 100%;
+              }
+              h3 {
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 1rem 0 0.5rem 1rem;
+              }
+              p {
+                padding: 0 0 1.5rem 1rem;
+                color: #555;
+                span {
+                  display: inline-block;
+                  padding-bottom: 0.5rem;
+                }
+              }
+            }
+            article:hover {
+              background-color: #333;
+            }
+            article:hover > p, article:hover > h3 {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    #end-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.3;
+      h2 {
+        font-size: 2.5rem;
+        padding: 2rem;
+        font-weight: bold;
+      }
+      #end-container {
+        width: 100%;
+        display: flex;
+        padding-bottom: 2rem;
+        div {
+          width: 60%;
+          padding-left: 1.5rem;
+          video {
+            width: 100%;
+            padding-bottom: 1.5rem;
+          }
+          h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-bottom: 1rem;
+          }
+          p {
+            color: #555;
+            transition: color 200ms ease-out;
+          }
+        }
+        aside {
+          padding-left: 1.5rem;
+          article {
+            display: flex;
+            padding: 1rem 0 1rem 1rem;
+            img {
+              width: 35%;
+              align-self: flex-start;
+            }
+            div {
+              width: 65%;
+            }
+          }
+          #end-article-1 {
+            background-color: gainsboro;
+            transition: background-color 200ms ease-out, color 200ms ease-out;
+          }
+          #end-article-1:hover {
+            background-color: #333;
+          }
+          article:hover {
+            background-color: #333;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    border-top: 1px solid gainsboro;
+    padding: 1rem 1.5rem 5rem 1.5rem;
+    display: flex;
+    font-size: 0.85rem;
+    color: #555;
+    ul {
+      margin-right: 0;
+      margin-left: auto;
+      display: flex;
+      li {
+        margin-left: 1rem;
+        a {
+          color: #555;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  html {
+    header {
+      padding: 0;
+      a {
+        transition: background-color 120ms ease-out;
+        img {
+          height: 75%;
+        }
+      }
+      a:hover {
+        background-color: gainsboro;
+      }
+      #logo {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .desktop-version {
+        display: none;
+      }
+      .mobile-version {
+        display: flex;
+        height: 100%;
+        width: 75%;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 33.3%;
+          transition: background-color 120ms ease-out;
+        }
+        a:hover {
+          background-color: gainsboro;
+        }
+      }
+    }
+    main {
+      #banner-section {
+        padding: 0;
+        flex-direction: column;
+        img {
+          width: 100%;
+        }
+        div {
+          padding-left: 0;
+          width: 100%;
+          height: auto;
+          padding: 2rem 1rem;
+          box-sizing: border-box;
+          h1 {
+            width: 100%;
+            padding-bottom: 2rem;
+          }
+          p {
+            width: 100%;
+            padding-bottom: 1.5rem;
+          }
+          a {
+            width: 100%;
+            span {
+              width: 100%;
+            }
+          }
+        }
+      }
+      #promotion-section {
+        display: none;
+      }
+      #promotion-aside {
+        width: 100%;
+        padding: 1rem 1rem 2rem 1rem;
+        .desktop-version {
+          display: none;
+        }
+        .mobile-version {
+          display: block;
+        }
+        #article-1, #article-2, #article-3 {
+          padding: 0;
+          background-color: white;
+          margin: 0;
+          border: none;
+        }
+        article {
+          flex-direction: column;
+          a {
+            width: 100%;
+          }
+          div {
+            width: 100%;
+            padding: 2rem 1rem;
+          }
+        }
+      }
+      #course-section {
+        background-color: white;
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+        h2 {
+          padding: 2rem 0 0 0;
+        }
+        #course-container {
+          padding: 1rem 1rem 2rem 1rem;
+          width: 100%;
+          box-sizing: border-box;
+          .row {
+            flex-direction: column;
+            margin-bottom: 0;
+            a {
+              width: 100%;
+              article {
+                background-color: gainsboro;
+                margin-bottom: 0.5rem;
+                img {
+                  display: none;
+                }
+                h3 {
+                  padding: 2rem 1rem;
+                }
+                p {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      #end-section {
+        h2 {
+          padding: 2rem 0 1rem 0;
+        }
+        #end-container {
+          padding-bottom: 0;
+          div {
+            padding-left: 0;
+            width: 100%;
+            h3, p {
+              display: none;
+            }
+          }
+          aside {
+            display: none;
+          }
+        }
+      }
+    }
+    footer {
+      justify-content: center;
+      padding: 1rem 0 2rem 0;
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+/* no-flexbox */
+.no-flexbox {
+  header {
+    p {
+      display: inline-block;
+      box-sizing: border-box;
+      position: relative;
+      bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .desktop-version {
+      display: inline-block;
+      box-sizing: border-box;
+      float: right;
+      ul {
+        box-sizing: border-box;
+        li {
+          display: inline-block;
+          box-sizing: border-box;
+          a {
+            box-sizing: border-box;
+            margin-top: 21px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    #banner-section {
+      box-sizing: border-box;
+      img {
+        display: inline-block;
+      }
+      div {
+        display: inline-block;
+        box-sizing: border-box;
+        float: right;
+      }
+    }
+    #promotion-section {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    #promotion-aside {
+      display: inline-block;
+      box-sizing: border-box;
+      float: right;
+      article {
+        height: 176px;
+        a {
+          display: inline-block;
+          box-sizing: border-box;
+          max-height: 200px;
+          img {
+            display: inline-block;
+            box-sizing: border-box;
+            max-height: 180px;
+            max-width: 180px;
+          }
+        }
+        div {
+          display: inline-block;
+          box-sizing: border-box;
+          float: right;
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+    #course-section {
+      text-align: center;
+      #course-container {
+        .row {
+          height: 350px;
+          margin-bottom: 16px;
+          a {
+            display: inline-block;
+            height: 100%;
+            margin: 0 16px;
+            article {
+              box-sizing: border-box;
+              display: inline-block;
+              height: 100%;
+              text-align: left;
+              h3 {
+                padding: 0 0 0 16px;
+              }
+              p {
+                padding: 16px 0 16px 16px;
+                span {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #end-section {
+      #end-container {
+        div {
+          display: inline-block;
+          box-sizing: border-box;
+        }
+        aside {
+          display: inline-block;
+          float: right;
+          box-sizing: border-box;
+          div {
+            display: inline-block;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    border-top: none;
+    span {
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    ul {
+      margin: 0;
+      li {
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .no-flexbox {
+    header {
+      p {
+        display: none;
+      }
+      .desktop-version {
+        display: none;
+      }
+      .mobile-version {
+        display: inline-block;
+        float: right;
+        box-sizing: border-box;
+        a {
+          display: inline-block;
+          box-sizing: border-box;
+          width: 31%;
+        }
+      }
+      a {
+        img {
+          display: inline-block;
+          box-sizing: border-box;
+          padding-left: 35%;
+        }
+      }
+      #logo {
+        display: inline-block;
+        box-sizing: border-box;
+      }
+    }
+    main {
+      #promotion-section {
+        display: none;
+      }
+      #promotion-aside {
+        article {
+          height: auto;
+          max-height: none;
+          display: inline-block;
+          width: 100%;
+          a {
+            max-height: none;
+            img {
+              max-width: none;
+              max-height: none;
+            }
+          }
+        }
+      }
+      #course-section {
+        box-sizing: border-box;
+        #course-container {
+          box-sizing: border-box;
+          .row {
+            height: auto;
+            margin-bottom: 0;
+            a {
+              height: 100px;
+              margin-bottom: 16px;
+              margin-left: 0;
+              article {
+                h3 {
+                  margin-top: 36px;
+                  margin-left: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      #end-section {
+        text-align: center;
+        #end-container {
+          aside {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* no-rem */
+.no-cssremunit {
+  .halfsection {
+    padding: 32px 24px;
+  }
+  header {
+    height: 64px;
+    padding: 0 8px 0 24px;
+    p {
+      font-size: 24px;
+    }
+    .desktop-version {
+      ul {
+        li {
+          font-size: 22px;
+          a {
+            padding: 0 16px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    #banner-section {
+      padding: 40px 32px;
+      div {
+        padding-left: 32px;
+        h1 {
+          font-size: 48px;
+          padding-bottom: 16px;
+        }
+        p {
+          font-size: 32px;
+          padding-bottom: 16px;
+        }
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+    #promotion-section {
+      h2 {
+        font-size: 40px;
+        padding: 32px 0 24px 0;
+      }
+      .author {
+        padding: 24px 0 32px 0;
+      }
+    }
+    #promotion-aside {
+      padding-bottom: 32px;
+      article {
+        padding: 32px 0 16px 16px;
+        div {
+          padding-left: 24px;
+          h3 {
+            font-size: 24px;
+          }
+          p, a {
+            padding-top: 12px;
+          }
+        }
+      }
+      #article-2, #article-3 {
+        padding: 16px 0 16px 16px;
+      }
+    }
+    #course-section {
+      h2 {
+        font-size: 40px;
+        padding: 32px;
+      }
+      #course-container {
+        padding: 0 64px 32px 64px;
+        .row {
+          margin-bottom: 16px;
+          a {
+            article {
+              h3 {
+                font-size: 24px;
+                padding: 16px 0 8px 16px;
+              }
+              p {
+                padding: 0 0 24px 16px;
+                span {
+                  padding-bottom: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #end-section {
+      h2 {
+        font-size: 40px;
+        padding: 32px;
+      }
+      #end-container {
+        padding-bottom: 32px;
+        div {
+          padding-left: 24px;
+          video {
+            padding-bottom: 24px;
+          }
+          h3 {
+            font-size: 24px;
+            padding-bottom: 16px;
+          }
+        }
+        aside {
+          padding-left: 24px;
+          article {
+            padding: 16px 0 16px 16px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding: 16px 24px 80px 24px;
+    font-size: 14px;
+    ul {
+      li {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .no-cssremunit {
+    main {
+      #banner-section {
+        div {
+          padding: 32px 16px;
+          h1 {
+            padding-bottom: 32px;
+          }
+          p {
+            padding-bottom: 24px;
+          }
+        }
+      }
+      #promotion-aside {
+        padding: 16px 16px 32px 16px;
+        article {
+          div {
+            padding: 32px 16px;
+          }
+        }
+      }
+      #course-section {
+        h2 {
+          padding: 32px 0 0 0;
+        }
+        #course-container {
+          padding: 16px 16px 32px 16px;
+          .row {
+            a {
+              article {
+                margin-bottom: 8px;
+                h3 {
+                  padding: 32px 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      #end-section {
+        h2 {
+          padding: 32px 0 16px 0;
+        }
+      }
+    }
+    footer {
+      padding: 16px 0 32px 0;
+    }
+  }
+}

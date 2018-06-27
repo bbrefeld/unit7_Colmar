@@ -1,0 +1,866 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,700');
+
+html {
+  font-size: 16px;
+  font-family: serif, sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-family: serif, sans-serif;
+}
+.fullsection {
+  width: 100%;
+}
+.halfsection {
+  width: 60%;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+}
+aside {
+  width: 40%;
+}
+h1, h2, h3 {
+  font-family: 'Archivo', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+header {
+  /*display: flex;*/
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 4rem;
+  padding: 0 0.5rem 0 1.5rem;
+}
+header a {
+  height: 100%;
+}
+header a img {
+  height: 100%;
+}
+header p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header p span {
+  color: gray;
+}
+header .mobile-version {
+  display: none;
+}
+header .desktop-version {
+  margin-right: 0;
+  margin-left: auto;
+  height: 100%;
+}
+header .desktop-version ul {
+  /*display: flex;*/
+  align-items: center;
+  height: 100%;
+}
+header .desktop-version ul li {
+  height: 100%;
+  font-size: 1.35rem;
+  transition: background-color 120ms ease-out font-weight 120ms ease-out;
+}
+header .desktop-version ul li a:hover {
+  background-color: gainsboro;
+  font-weight: bold;
+}
+header .desktop-version ul li a {
+  /*display: flex;*/
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+main #banner-section {
+  background-color: Gainsboro;
+  /*display: flex;*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2rem;
+}
+main #banner-section img {
+  width: 60%;
+  height: auto;
+}
+main #banner-section div {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  height: 70%;
+  padding-left: 2rem;
+}
+main #banner-section div h1 {
+  font-size: 3rem;
+  font-weight: Bold;
+  width: 90%;
+  color: #222;
+  padding-bottom: 1rem
+}
+main #banner-section div p {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 90%;
+  color: #444;
+  padding-bottom: 1rem;
+}
+
+main #banner-section div span {
+  display: block;
+  font-weight: bold;
+  padding: 8px;
+  width: 80%;
+  box-sizing: border-box;
+  background-color: #222;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: color 200ms ease-out, background-color 200ms ease-out, border 120ms ease-out;
+}
+main #banner-section div span:hover {
+  color: #222;
+  background-color: white;
+}
+
+main #promotion-section {
+  line-height: 1.3;
+}
+main #promotion-section img {
+  width: 100%;
+}
+main #promotion-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem 0 1.5rem 0;
+}
+main #promotion-section .author {
+  padding: 1.5rem 0 2rem 0;
+}
+main #promotion-aside {
+  border-left: 1px solid gainsboro;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+  line-height: 1.3;
+}
+main #promotion-aside .mobile-version {
+  display: none;
+}
+main #promotion-aside article {
+  /*display: flex;*/
+  align-items: center;
+  padding: 2rem 0 1rem 1rem;
+}
+main #promotion-aside #article-1 {
+  border-bottom: 1px solid gainsboro;
+  transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+main #promotion-aside #article-1:hover {
+  background-color: #333;
+  color: white;
+}
+main #promotion-aside #article-2 {
+  padding: 1rem 0 1rem 1rem;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  margin-top: 1px;
+  transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+main #promotion-aside #article-2:hover {
+  background-color: #333;
+  color: white;
+}
+main #promotion-aside #article-3 {
+  padding: 1rem 0 1rem 1rem;
+  background-color: Gainsboro;
+  margin-top: 1px;
+  transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+main #promotion-aside #article-3:hover {
+  background-color: #333;
+  color: white;
+}
+main #promotion-aside article a {
+  width: 35%;
+}
+main #promotion-aside article a img {
+  width: 100%;
+}
+main #promotion-aside article div {
+  /*display: flex;*/
+  align-content: center;
+  flex-wrap: wrap;
+  width: 65%;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+}
+main #promotion-aside article div h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-basis: 100%;
+}
+main #promotion-aside article div p {
+  padding-top: 0.75rem;
+  flex-basis: 100%;
+}
+main #promotion-aside article div a {
+  padding-top: 0.75rem;
+  color: CornflowerBlue;
+}
+
+main #course-section {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEE;
+  line-height: 1.3;
+}
+main #course-section h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+main #course-section #course-container {
+  /*display: flex;*/
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 4rem 2rem 4rem;
+}
+main #course-section #course-container .row {
+  width: 100%;
+  /*display: flex;*/
+  margin-bottom: 1rem;
+}
+main #course-section #course-container a {
+  width: 28%;
+}
+main #course-section #course-container article {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+main #course-section #course-container article:hover {
+  background-color: #333;
+}
+main #course-section #course-container article:hover > p {
+  color: white;
+}
+main #course-section #course-container article:hover > h3 {
+  color: white;
+}
+main #course-section #course-container article img {
+  width: 100%;
+}
+main #course-section #course-container article h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0 0.5rem 1rem;
+}
+main #course-section #course-container article p {
+  padding: 0 0 1.5rem 1rem;
+  color: #555;
+}
+main #course-section #course-container article p span {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+main #end-section {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3;
+}
+main #end-section h2 {
+  font-size: 2.5rem;
+  padding: 2rem;
+  font-weight: bold;
+}
+main #end-section #end-container {
+  width: 100%;
+  /*display: flex;*/
+  padding-bottom: 2rem;
+}
+main #end-section #end-container div {
+  width: 60%;
+  padding-left: 1.5rem;
+}
+main #end-section #end-container div video {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+main #end-section #end-container div h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+main #end-section #end-container div p {
+  color: #555
+  transition: color 200ms ease-out;
+}
+main #end-section #end-container aside {
+  padding-left: 1.5rem;
+}
+main #end-section #end-container aside article {
+  /*display: flex;*/
+  padding: 1rem 0 1rem 1rem;
+}
+main #end-section #end-container aside #end-article-1 {
+  background-color: gainsboro;
+  transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+main #end-section #end-container aside #end-article-1:hover {
+  background-color: #333;
+}
+main #end-section #end-container aside article:hover {
+  background-color: #333;
+  color: white;
+}
+main #end-section #end-container aside article img {
+  width: 35%;
+  align-self: flex-start;
+}
+main #end-section #end-container aside article div {
+  width: 65%;
+}
+
+footer {
+  border-top: 1px solid gainsboro;
+  padding: 1rem 1.5rem 5rem 1.5rem;
+  /*display: flex;*/
+  font-size: 0.85rem;
+  color: #555;
+}
+footer ul {
+  margin-right: 0;
+  margin-left: auto;
+  /*display: flex;*/
+}
+footer ul li {
+  margin-left: 1rem;
+}
+footer ul li a {
+  color: #555;
+}
+
+
+@media only screen and (max-width: 855px) {
+
+  header .desktop-version, header p {
+    display: none;
+  }
+  header {
+    padding: 0;
+  }
+  header a {
+    transition: background-color 120ms ease-out;
+  }
+  header a:hover {
+    background-color: gainsboro;
+  }
+  header a img {
+    height: 75%;
+  }
+  header #logo {
+    width: 25%;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+  }
+  header .mobile-version {
+    /*display: flex;*/
+    height: 100%;
+    width: 75%;
+  }
+  header .mobile-version a {
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    transition: background-color 120ms ease-out;
+  }
+  header .mobile-version a:hover {
+    background-color: gainsboro;
+  }
+
+  main #banner-section {
+    padding: 0;
+    flex-direction: column;
+  }
+  main #banner-section img {
+    width: 100%;
+  }
+  main #banner-section div {
+    padding-left: 0;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+  }
+  main #banner-section div h1 {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  main #banner-section div p {
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+  main #banner-section div a {
+    width: 100%;
+  }
+  main #banner-section div a span {
+    width: 100%;
+  }
+
+  main #promotion-section {
+    display: none;
+  }
+  main #promotion-aside {
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  main #promotion-aside .desktop-version {
+    display: none;
+  }
+  main #promotion-aside .mobile-version {
+    display: block;
+  }
+  main #promotion-aside article, main #promotion-aside #article-1, main #promotion-aside #article-2, main #promotion-aside #article-3 {
+    padding: 0;
+    background-color: white;
+    margin: 0;
+    border: none;
+  }
+  main #promotion-aside article {
+    flex-direction: column;
+  }
+  main #promotion-aside article a {
+    width: 100%;
+  }
+  main #promotion-aside article div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  main #course-section {
+    background-color: white;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+  }
+  main #course-section h2 {
+    padding: 2rem 0 0 0;
+  }
+  main #course-section #course-container {
+    padding: 1rem 1rem 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  main #course-section #course-container .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  main #course-section #course-container a {
+    width: 100%;
+  }
+  main #course-section #course-container img, main #course-section #course-container p {
+    display: none;
+  }
+  main #course-section #course-container article {
+    background-color: gainsboro;
+    margin-bottom: 0.5rem;
+  }
+  main #course-section #course-container article h3 {
+    padding: 2rem 1rem;
+  }
+
+  main #end-section h2 {
+    padding: 2rem 0 1rem 0;
+  }
+  main #end-section div h3, main #end-section div p, main #end-section aside {
+    display: none;
+  }
+  main #end-section #end-container {
+    padding-bottom: 0;
+  }
+  main #end-section #end-container div {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  footer {
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+  }
+  footer ul {
+    display: none;
+  }
+}
+
+/* no-flexbox */
+header p {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 20px;
+}
+header a {
+  display: inline-block;
+  box-sizing: border-box;
+}
+header .desktop-version {
+  display: inline-block;
+  box-sizing: border-box;
+  float: right;
+}
+header .desktop-version ul {
+  box-sizing: border-box;
+}
+header .desktop-version ul li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+header .desktop-version ul li a {
+  box-sizing: border-box;
+  margin-top: 21px;
+}
+
+main #banner-section {
+  box-sizing: border-box;
+}
+main #banner-section img {
+  display: inline-block;
+}
+main #banner-section div {
+  display: inline-block;
+  box-sizing: border-box;
+  float: right;
+}
+
+main #promotion-section {
+  display: inline-block;
+  box-sizing: border-box;
+}
+main #promotion-aside {
+  display: inline-block;
+  box-sizing: border-box;
+  float: right;
+}
+main #promotion-aside article {
+  height: 176px;
+}
+main #promotion-aside article a {
+  display: inline-block;
+  box-sizing: border-box;
+  max-height: 200px;
+}
+main #promotion-aside article img {
+  display: inline-block;
+  box-sizing: border-box;
+  max-height: 180px;
+  max-width: 180px;
+}
+main #promotion-aside article div {
+  display: inline-block;
+  box-sizing: border-box;
+  float: right;
+}
+main #promotion-aside article div a {
+  width: 100%;
+}
+
+main #course-section {
+  text-align: center;
+}
+main #course-section #course-container .row {
+  height: 350px;
+  margin-bottom: 16px;
+
+}
+main #course-section #course-container a {
+  display: inline-block;
+  height: 100%;
+  margin: 0 16px;
+}
+main #course-section #course-container article {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100%;
+  text-align: left;
+}
+main #course-section #course-container article h3 {
+  padding: 0 0 0 16px;
+}
+main #course-section #course-container article p {
+  padding: 16px 0 16px 16px;
+}
+main #course-section #course-container article p span {
+  padding: 0;
+}
+
+main #end-section #end-container div {
+  display: inline-block;
+  box-sizing: border-box;
+}
+main #end-section #end-container aside {
+  display: inline-block;
+  float: right;
+  box-sizing: border-box;
+}
+main #end-section #end-container aside div {
+  display: inline-block;
+  float: right;
+}
+
+footer {
+  border-top: none;
+}
+footer span {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+footer ul {
+  margin: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 855px) {
+  header p {
+    display: none;
+  }
+  header .desktop-version {
+    display: none;
+  }
+  header .mobile-version {
+    display: inline-block;
+    float: right;
+    box-sizing: border-box;
+  }
+  header a img {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 35%;
+  }
+  header #logo {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  header .mobile-version a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 31%;
+  }
+  main #promotion-section {
+    display: none;
+  }
+  main #promotion-aside article a {
+    max-height: none;
+  }
+  main #promotion-aside article a img {
+    max-width: none;
+    max-height: none;
+  }
+  main #promotion-aside article {
+    height: auto;
+    max-height: none;
+    display: inline-block;
+    width: 100%;
+  }
+  main #course-section {
+    box-sizing: border-box;
+  }
+  main #course-section #course-container {
+    box-sizing: border-box;
+  }
+  main #course-section #course-container .row {
+    height: auto;
+    margin-bottom: 0;
+  }
+  main #course-section #course-container a {
+    height: 100px;
+    margin-bottom: 16px;
+    margin-left: 0;
+  }
+  main #course-section #course-container article h3 {
+    margin-top: 36px;
+    margin-left: 16px;
+  }
+  main #end-section {
+    text-align: center;
+  }
+  main #end-section #end-container aside {
+    display: none;
+  }
+}
+
+/* no rem */
+
+.halfsection {
+  padding: 32px 24px;
+}
+
+header {
+  height: 64px;
+  padding: 0 8px 0 24px;
+}
+header p {
+  font-size: 24px;
+}
+header .desktop-version ul li {
+  font-size: 22px;
+}
+header .desktop-version ul li a {
+  padding: 0 16px;
+}
+
+main #banner-section {
+  padding: 40px 32px;
+}
+main #banner-section div {
+  padding-left: 32px;
+}
+main #banner-sectiom div h1 {
+  font-size: 48px;
+  padding-bottom: 16px;
+}
+main #banner-section div p {
+  font-size: 32px;
+  padding-bottom: 16px;
+}
+
+main #banner-section div span {
+  font-size: 24px;
+}
+
+main #promotion-section h2 {
+  font-size: 40px;
+  padding: 32px 0 24px 0;
+}
+main #promotion-section .author {
+  padding: 24px 0 32px 0;
+}
+main #promotion-aside {
+  padding-bottom: 32px;
+}
+main #promotion-aside article {
+  padding: 32px 0 16px 16px;
+}
+main #promotion-aside #article-2 {
+  padding: 16px 0 16px 16px;
+}
+main #promotion-aside #article-3 {
+  padding: 16px 0 16px 16px;
+}
+main #promotion-aside article div {
+  padding-left: 24px;
+}
+main #promotion-aside article div h3 {
+  font-size: 24px;
+}
+main #promotion-aside article div p {
+  padding-top: 12px;
+}
+main #promotion-aside article div a {
+  padding-top: 12px;
+}
+main #course-section h2 {
+  font-size: 40px;
+  padding: 32px;
+}
+main #course-section #course-container {
+  padding: 0 64px 32px 64px;
+}
+main #course-section #course-container .row {
+  margin-bottom: 16px;
+}
+main #course-section #course-container article h3 {
+  font-size: 24px;
+  padding: 16px 0 8px 16px;
+}
+main #course-section #course-container article p {
+  padding: 0 0 24px 16px;
+}
+main #course-section #course-container article p span {
+  padding-bottom: 8px;
+}
+main #end-section h2 {
+  font-size: 40px;
+  padding: 32px;
+}
+main #end-section #end-container {
+  padding-bottom: 32px;
+}
+main #end-section #end-container div {
+  padding-left: 24px;
+}
+main #end-section #end-container div video {
+  padding-bottom: 24px;
+}
+main #end-section #end-container div h3 {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+main #end-section #end-container aside {
+  padding-left: 24px;
+}
+main #end-section #end-container aside article {
+  padding: 16px 0 16px 16px;
+}
+footer {
+  padding: 16px 24px 80px 24px;
+  font-size: 14px;
+}
+footer ul li {
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 855px) {
+  main #banner-section div {
+    padding: 32px 16px;
+  }
+  main #banner-section div h1 {
+    padding-bottom: 32px;
+  }
+  main #banner-section div p {
+    padding-bottom: 24px;
+  }
+  main #promotion-aside {
+    padding: 16px 16px 32px 16px;
+  }
+  main #promotion-aside article div {
+    padding: 32px 16px;
+  }
+  main #course-section h2 {
+    padding: 32px 0 0 0;
+  }
+  main #course-section #course-container {
+    padding: 16px 16px 32px 16px;
+  }
+  main #course-section #course-container article {
+    margin-bottom: 8px;
+  }
+  main #course-section #course-container article h3 {
+    padding: 32px 16px;
+  }
+  main #end-section h2 {
+    padding: 32px 0 16px 0;
+  }
+  footer {
+    padding: 16px 0 32px 0;
+  }
+}

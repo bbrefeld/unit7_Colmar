@@ -408,6 +408,9 @@ html main #end-section #end-container aside article:hover {
   background-color: #333;
   color: white;
 }
+html main #end-section #end-container aside article:hover > div p {
+  color: white;
+}
 html footer {
   border-top: 1px solid gainsboro;
   padding: 1rem 1.5rem 5rem 1.5rem;

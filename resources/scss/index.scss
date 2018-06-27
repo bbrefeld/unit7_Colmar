@@ -314,6 +314,9 @@ html {
             background-color: #333;
             color: white;
           }
+          article:hover > div p {
+            color: white;
+          }
         }
       }
     }
